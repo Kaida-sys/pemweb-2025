@@ -35,4 +35,4 @@
       };
     };
   </script>
-  <script defer src="assets/bundle.js"></script>
+  <script defer src="{{ asset('asset-frontend/bundle.js') }}"></script>

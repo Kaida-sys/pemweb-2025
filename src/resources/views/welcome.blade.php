@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Base - Tailwind CSS Startup Template</title>
-  <link rel="icon" href="favicon.ico">
-  <link href="assets/style.css" rel="stylesheet">
+  <link rel="icon" href="{{ asset('favicon.ico') }}">
+  <link href="{{ asset('asset-frontend/style.css') }}" rel="stylesheet">
 </head>
 
 <body x-data="{ page: 'home', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
@@ -21,8 +21,8 @@
     <div class="bb ze ki xn 2xl:ud-px-0 oo wf yf i">
       <div class="vd to/4 tc wf yf">
         <a href="index.html">
-          <img class="om" src="assets/images/logo-light.svg" alt="Logo Light" />
-          <img class="xc nm" src="assets/images/logo-dark.svg" alt="Logo Dark" />
+          <img class="om" src="{{ asset('images-frontend/images/logo-light.svg') }}" alt="Logo Light" />
+          <img class="xc nm" src="{{ asset('images-frontend/images/logo-dark.svg') }}" alt="Logo Dark" />
         </a>
 
         <!-- Hamburger Toggle BTN -->
@@ -85,7 +85,7 @@
                   fill="" />
               </svg>
               <!-- Icon Sun -->
-              <img class="xc nm" src="assets/images/icon-moon.svg" alt="Moon" />
+              <img class="xc nm" src="{{ asset('images-frontend/images/icon-moon.svg') }}" alt="Moon" />
             </label>
           </div>
 
@@ -103,13 +103,13 @@
   <main>
     <!-- ===== Hero Start ===== -->
     <section class="gj do ir hj sp jr i pg">
-      <!-- Hero Images -->
+      <!-- Hero images-frontend/images -->
       <div class="xc fn zd/2 2xl:ud-w-187.5 bd 2xl:ud-h-171.5 h q r">
-        <img src="assets/images/shape-01.svg" alt="shape" class="xc 2xl:ud-block h t -ud-left-[10%] ua" />
-        <img src="assets/images/shape-02.svg" alt="shape" class="xc 2xl:ud-block h u p va" />
-        <img src="assets/images/shape-03.svg" alt="shape" class="xc 2xl:ud-block h v w va" />
-        <img src="assets/images/shape-04.svg" alt="shape" class="h q r" />
-        <img src="assets/images/hero.png" alt="Woman" class="h q r ua" />
+        <img src="{{ asset('images-frontend/images/shape-01.svg') }}" alt="shape" class="xc 2xl:ud-block h t -ud-left-[10%] ua" />
+        <img src="{{ asset('images-frontend/images/shape-02.svg') }}" alt="shape" class="xc 2xl:ud-block h u p va" />
+        <img src="{{ asset('images-frontend/images/shape-03.svg') }}" alt="shape" class="xc 2xl:ud-block h v w va" />
+        <img src="{{ asset('images-frontend/images/shape-04.svg') }}" alt="shape" class="h q r" />
+        <img src="{{ asset('images-frontend/images/hero.png') }}" alt="Woman" class="h q r ua" />
       </div>
 
       <!-- Hero Content -->
@@ -143,7 +143,7 @@
           <!-- Small Features Item -->
           <div class="animate_top kn to/3 tc cg oq">
             <div class="tc wf xf cf ae cd rg mh">
-              <img src="assets/images/icon-01.svg" alt="Icon" />
+              <img src="{{ asset('images-frontend/images/icon-01.svg') }}" alt="Icon" />
             </div>
             <div>
               <h4 class="ek yj go kk wm xb">24/7 Support</h4>
@@ -154,7 +154,7 @@
           <!-- Small Features Item -->
           <div class="animate_top kn to/3 tc cg oq">
             <div class="tc wf xf cf ae cd rg nh">
-              <img src="assets/images/icon-02.svg" alt="Icon" />
+              <img src="{{ asset('images-frontend/images/icon-02.svg') }}" alt="Icon" />
             </div>
             <div>
               <h4 class="ek yj go kk wm xb">Take Ownership</h4>
@@ -165,7 +165,7 @@
           <!-- Small Features Item -->
           <div class="animate_top kn to/3 tc cg oq">
             <div class="tc wf xf cf ae cd rg oh">
-              <img src="assets/images/icon-03.svg" alt="Icon" />
+              <img src="{{ asset('images-frontend/images/icon-03.svg') }}" alt="Icon" />
             </div>
             <div>
               <h4 class="ek yj go kk wm xb">Team Work</h4>
@@ -181,17 +181,17 @@
     <section class="ji gp uq 2xl:ud-py-35 pg">
       <div class="bb ze ki xn wq">
         <div class="tc wf gg qq">
-          <!-- About Images -->
+          <!-- About images-frontend/images -->
           <div class="animate_left xc gn gg jn/2 i">
             <div>
-              <img src="assets/images/shape-05.svg" alt="Shape" class="h -ud-left-5 x" />
-              <img src="assets/images/about-01.png" alt="About" class="ib" />
-              <img src="assets/images/about-02.png" alt="About" />
+              <img src="{{ asset('images-frontend/images/shape-05.svg') }}" alt="Shape" class="h -ud-left-5 x" />
+              <img src="{{ asset('images-frontend/images/about-01.png') }}" alt="About" class="ib" />
+              <img src="{{ asset('images-frontend/images/about-02.png') }}" alt="About" />
             </div>
             <div>
-              <img src="assets/images/shape-06.svg" alt="Shape" />
-              <img src="assets/images/about-03.png" alt="About" class="ob gb" />
-              <img src="assets/images/shape-07.svg" alt="Shape" class="bb" />
+              <img src="{{ asset('images-frontend/images/shape-06.svg') }}" alt="Shape" />
+              <img src="{{ asset('images-frontend/images/about-03.png') }}" alt="About" class="ob gb" />
+              <img src="{{ asset('images-frontend/images/shape-07.svg') }}" alt="Shape" class="bb" />
             </div>
           </div>
 
@@ -205,7 +205,7 @@
             <a href="https://www.youtube.com/watch?v=xcJtL7QggTI" data-fslightbox class="vc wf hg mb">
               <span class="tc wf xf be dd rg i gh ua">
                 <span class="nf h vc yc vd rg gh qk -ud-z-1"></span>
-                <img src="assets/images/icon-play.svg" alt="Play" />
+                <img src="{{ asset('images-frontend/images/icon-play.svg') }}" alt="Play" />
               </span>
               <span class="kk">SEE HOW WE WORK</span>
             </a>
@@ -219,10 +219,10 @@
     <section class="i pg ji gp uq">
       <!-- Bg Shapes -->
       <span class="rc h s r vd fd/5 fh rm"></span>
-      <img src="assets/images/shape-08.svg" alt="Shape Bg" class="h q r" />
-      <img src="assets/images/shape-09.svg" alt="Shape" class="of h y z/2" />
-      <img src="assets/images/shape-10.svg" alt="Shape" class="h _ aa" />
-      <img src="assets/images/shape-11.svg" alt="Shape" class="of h m ba" />
+      <img src="{{ asset('images-frontend/images/shape-08.svg') }}" alt="Shape Bg" class="h q r" />
+      <img src="{{ asset('images-frontend/images/shape-09.svg') }}" alt="Shape" class="of h y z/2" />
+      <img src="{{ asset('images-frontend/images/shape-10.svg') }}" alt="Shape" class="h _ aa" />
+      <img src="{{ asset('images-frontend/images/shape-11.svg') }}" alt="Shape" class="of h m ba" />
 
       <!-- Section Title Start -->
       <div
@@ -242,7 +242,7 @@
           <!-- Team Item -->
           <div class="animate_top rj">
             <div class="c i pg z-1">
-              <img class="vd" src="assets/images/team-01.png" alt="Team" />
+              <img class="vd" src="{{ asset('images-frontend/images/team-01.png') }}" alt="Team" />
 
               <div class="ef im nl il">
                 <span class="h -ud-left-5 -ud-bottom-21 rc de gd gh if wa"></span>
@@ -291,7 +291,7 @@
           <!-- Team Item -->
           <div class="animate_top rj">
             <div class="c i pg z-1">
-              <img class="vd" src="assets/images/team-02.png" alt="Team" />
+              <img class="vd" src="{{ asset('images-frontend/images/team-02.png') }}" alt="Team" />
 
               <div class="ef im nl il">
                 <span class="h -ud-left-5 -ud-bottom-21 rc de gd gh if wa"></span>
@@ -340,7 +340,7 @@
           <!-- Team Item -->
           <div class="animate_top rj">
             <div class="c i pg z-1">
-              <img class="vd" src="assets/images/team-03.png" alt="Team" />
+              <img class="vd" src="{{ asset('images-frontend/images/team-03.png') }}" alt="Team" />
 
               <div class="ef im nl il">
                 <span class="h -ud-left-5 -ud-bottom-21 rc de gd gh if wa"></span>
@@ -409,42 +409,42 @@
         <div class="wc qf pn xo ng">
           <!-- Service Item -->
           <div class="animate_top sg oi pi zq ml il am cn _m">
-            <img src="assets/images/icon-04.svg" alt="Icon" />
+            <img src="{{ asset('images-frontend/images/icon-04.svg') }}" alt="Icon" />
             <h4 class="ek zj kk wm nb _b">Crafted for Startups</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
           </div>
 
           <!-- Service Item -->
           <div class="animate_top sg oi pi zq ml il am cn _m">
-            <img src="assets/images/icon-05.svg" alt="Icon" />
+            <img src="{{ asset('images-frontend/images/icon-05.svg') }}" alt="Icon" />
             <h4 class="ek zj kk wm nb _b">High-quality Design</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
           </div>
 
           <!-- Service Item -->
           <div class="animate_top sg oi pi zq ml il am cn _m">
-            <img src="assets/images/icon-06.svg" alt="Icon" />
+            <img src="{{ asset('images-frontend/images/icon-06.svg') }}" alt="Icon" />
             <h4 class="ek zj kk wm nb _b">All Essential Sections</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
           </div>
 
           <!-- Service Item -->
           <div class="animate_top sg oi pi zq ml il am cn _m">
-            <img src="assets/images/icon-07.svg" alt="Icon" />
+            <img src="{{ asset('images-frontend/images/icon-07.svg') }}" alt="Icon" />
             <h4 class="ek zj kk wm nb _b">Speed Optimized</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
           </div>
 
           <!-- Service Item -->
           <div class="animate_top sg oi pi zq ml il am cn _m">
-            <img src="assets/images/icon-05.svg" alt="Icon" />
+            <img src="{{ asset('images-frontend/images/icon-05.svg') }}" alt="Icon" />
             <h4 class="ek zj kk wm nb _b">Fully Customizable</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
           </div>
 
           <!-- Service Item -->
           <div class="animate_top sg oi pi zq ml il am cn _m">
-            <img src="assets/images/icon-06.svg" alt="Icon" />
+            <img src="{{ asset('images-frontend/images/icon-06.svg') }}" alt="Icon" />
             <h4 class="ek zj kk wm nb _b">Regular Updates</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
           </div>
@@ -456,11 +456,11 @@
     <!-- ===== Pricing Table Start ===== -->
     <section x-data="setup()" class="i pg fh rm ji gp uq">
       <!-- Bg Shapes -->
-      <img src="assets/images/shape-06.svg" alt="Shape" class="h aa y" />
-      <img src="assets/images/shape-03.svg" alt="Shape" class="h ca u" />
-      <img src="assets/images/shape-07.svg" alt="Shape" class="h w da ee" />
-      <img src="assets/images/shape-12.svg" alt="Shape" class="h p s" />
-      <img src="assets/images/shape-13.svg" alt="Shape" class="h r q" />
+      <img src="{{ asset('images-frontend/images/shape-06.svg') }}" alt="Shape" class="h aa y" />
+      <img src="{{ asset('images-frontend/images/shape-03.svg') }}" alt="Shape" class="h ca u" />
+      <img src="{{ asset('images-frontend/images/shape-07.svg') }}" alt="Shape" class="h w da ee" />
+      <img src="{{ asset('images-frontend/images/shape-12.svg') }}" alt="Shape" class="h p s" />
+      <img src="{{ asset('images-frontend/images/shape-13.svg') }}" alt="Shape" class="h r q" />
 
       <!-- Section Title Start -->
       <div
@@ -565,7 +565,7 @@
           <!-- Project Item -->
           <div class="project-item wi fb vd jn/2 to/3 branding ecommerce">
             <div class="c i pg sg z-1">
-              <img src="assets/images/project-01.png" alt="Project" />
+              <img src="{{ asset('images-frontend/images/project-01.png') }}" alt="Project" />
 
               <div class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10">
                 <h4 class="ek tj kk hc">Photo Retouching</h4>
@@ -584,7 +584,7 @@
           <!-- Project Item -->
           <div class="project-item wi fb vd jn/2 to/3 digital">
             <div class="c i pg sg z-1">
-              <img src="assets/images/project-02.png" alt="Project" />
+              <img src="{{ asset('images-frontend/images/project-02.png') }}" alt="Project" />
 
               <div class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10">
                 <h4 class="ek tj kk hc">Photo Retouching</h4>
@@ -603,7 +603,7 @@
           <!-- Project Item -->
           <div class="project-item wi fb vd jn/2 to/3 branding ecommerce">
             <div class="c i pg sg z-1">
-              <img src="assets/images/project-04.png" alt="Project" />
+              <img src="{{ asset('images-frontend/images/project-04.png') }}" alt="Project" />
 
               <div class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10">
                 <h4 class="ek tj kk hc">Photo Retouching</h4>
@@ -622,7 +622,7 @@
           <!-- Project Item -->
           <div class="project-item wi fb vd vo/3 digital ecommerce">
             <div class="c i pg sg z-1">
-              <img src="assets/images/project-03.png" alt="Project" />
+              <img src="{{ asset('images-frontend/images/project-03.png') }}" alt="Project" />
 
               <div class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10">
                 <h4 class="ek tj kk hc">Photo Retouching</h4>
@@ -671,10 +671,10 @@
                   <span class="rc je md/2 mh yg h q p"></span>
 
                   <div class="tc sf rn tn un zf dp">
-                    <img class="bf" src="assets/images/testimonial.png" alt="User" />
+                    <img class="bf" src="{{ asset('images-frontend/images/testimonial.png') }}" alt="User" />
 
                     <div>
-                      <img src="assets/images/icon-quote.svg" alt="Quote" />
+                      <img src="{{ asset('images-frontend/images/icon-quote.svg') }}" alt="Quote" />
                       <p class="ek ik xj _p kc fb">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat quis enim sed,
                         ullamcorper semper ligula. Mauris consequat justo volutpat.
@@ -686,7 +686,7 @@
                           <span class="rc">Founter @democompany</span>
                         </div>
 
-                        <img class="rk" src="assets/images/brand-light-02.svg" alt="Brand" />
+                        <img class="rk" src="{{ asset('images-frontend/images/brand-light-02.svg') }}" alt="Brand" />
                       </div>
                     </div>
                   </div>
@@ -720,10 +720,10 @@
 
     <!-- ===== Counter Start ===== -->
     <section class="i pg qh rm ji hp">
-      <img src="assets/images/shape-11.svg" alt="Shape" class="of h ga ha ke" />
-      <img src="assets/images/shape-07.svg" alt="Shape" class="h ia o ae jf" />
-      <img src="assets/images/shape-14.svg" alt="Shape" class="h ja ka" />
-      <img src="assets/images/shape-15.svg" alt="Shape" class="h q p" />
+      <img src="{{ asset('images-frontend/images/shape-11.svg') }}" alt="Shape" class="of h ga ha ke" />
+      <img src="{{ asset('images-frontend/images/shape-07.svg') }}" alt="Shape" class="h ia o ae jf" />
+      <img src="{{ asset('images-frontend/images/shape-14.svg') }}" alt="Shape" class="h ja ka" />
+      <img src="{{ asset('images-frontend/images/shape-15.svg') }}" alt="Shape" class="h q p" />
 
       <div class="bb ze i va ki xn br">
         <div class="tc uf sn tn xf un gg">
@@ -766,28 +766,28 @@
       <div class="bb ze ah ch pm hj xp ki xn 2xl:ud-px-49 bc">
         <div class="wc rf qn zf cp kq xf wf">
           <a href="#!" class="rc animate_top">
-            <img class="th wl ml il zl om" src="assets/images/brand-light-01.svg" alt="Clients" />
-            <img class="xc sk ml il zl nm" src="assets/images/brand-dark-01.svg" alt="Clients" />
+            <img class="th wl ml il zl om" src="{{ asset('images-frontend/images/brand-light-01.svg') }}" alt="Clients" />
+            <img class="xc sk ml il zl nm" src="{{ asset('images-frontend/images/brand-dark-01.svg') }}" alt="Clients" />
           </a>
           <a href="#!" class="rc animate_top">
-            <img class="tk ml il zl om" src="assets/images/brand-light-02.svg" alt="Clients" />
-            <img class="xc sk ml il zl nm" src="assets/images/brand-dark-02.svg" alt="Clients" />
+            <img class="tk ml il zl om" src="{{ asset('images-frontend/images/brand-light-02.svg') }}" alt="Clients" />
+            <img class="xc sk ml il zl nm" src="{{ asset('images-frontend/images/brand-dark-02.svg') }}" alt="Clients" />
           </a>
           <a href="#!" class="rc animate_top">
-            <img class="tk ml il zl om" src="assets/images/brand-light-03.svg" alt="Clients" />
-            <img class="xc sk ml il zl nm" src="assets/images/brand-dark-03.svg" alt="Clients" />
+            <img class="tk ml il zl om" src="{{ asset('images-frontend/images/brand-light-03.svg') }}" alt="Clients" />
+            <img class="xc sk ml il zl nm" src="{{ asset('images-frontend/images/brand-dark-03.svg') }}" alt="Clients" />
           </a>
           <a href="#!" class="rc animate_top">
-            <img class="tk ml il zl om" src="assets/images/brand-light-04.svg" alt="Clients" />
-            <img class="xc sk ml il zl nm" src="assets/images/brand-dark-04.svg" alt="Clients" />
+            <img class="tk ml il zl om" src="{{ asset('images-frontend/images/brand-light-04.svg') }}" alt="Clients" />
+            <img class="xc sk ml il zl nm" src="{{ asset('images-frontend/images/brand-dark-04.svg') }}" alt="Clients" />
           </a>
           <a href="#!" class="rc animate_top">
-            <img class="tk ml il zl om" src="assets/images/brand-light-05.svg" alt="Clients" />
-            <img class="xc sk ml il zl nm" src="assets/images/brand-dark-05.svg" alt="Clients" />
+            <img class="tk ml il zl om" src="{{ asset('images-frontend/images/brand-light-05.svg') }}" alt="Clients" />
+            <img class="xc sk ml il zl nm" src="{{ asset('images-frontend/images/brand-dark-05.svg') }}" alt="Clients" />
           </a>
           <a href="#!" class="rc animate_top">
-            <img class="tk ml il zl om" src="assets/images/brand-light-06.svg" alt="Clients" />
-            <img class="xc sk ml il zl nm" src="assets/images/brand-dark-06.svg" alt="Clients" />
+            <img class="tk ml il zl om" src="{{ asset('images-frontend/images/brand-light-06.svg') }}" alt="Clients" />
+            <img class="xc sk ml il zl nm" src="{{ asset('images-frontend/images/brand-dark-06.svg') }}" alt="Clients" />
           </a>
         </div>
       </div>
@@ -814,7 +814,7 @@
           <!-- Blog Item -->
           <div class="animate_top sg vk rm xm">
             <div class="c rc i z-1 pg">
-              <img class="w-full" src="assets/images/blog-01.png" alt="Blog" />
+              <img class="w-full" src="{{ asset('images-frontend/images/blog-01.png') }}" alt="Blog" />
 
               <div class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10">
                 <a href="./blog-single.html" class="vc ek rg lk gh sl ml il gi hi">Read More</a>
@@ -824,11 +824,11 @@
             <div class="yh">
               <div class="tc uf wf ag jq">
                 <div class="tc wf ag">
-                  <img src="assets/images/icon-man.svg" alt="User" />
+                  <img src="{{ asset('images-frontend/images/icon-man.svg') }}" alt="User" />
                   <p>Musharof Chy</p>
                 </div>
                 <div class="tc wf ag">
-                  <img src="assets/images/icon-calender.svg" alt="Calender" />
+                  <img src="{{ asset('images-frontend/images/icon-calender.svg') }}" alt="Calender" />
                   <p>25 Dec, 2025</p>
                 </div>
               </div>
@@ -841,7 +841,7 @@
           <!-- Blog Item -->
           <div class="animate_top sg vk rm xm">
             <div class="c rc i z-1 pg">
-              <img class="w-full" src="assets/images/blog-02.png" alt="Blog" />
+              <img class="w-full" src="{{ asset('images-frontend/images/blog-02.png') }}" alt="Blog" />
 
               <div class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10">
                 <a href="./blog-single.html" class="vc ek rg lk gh sl ml il gi hi">Read More</a>
@@ -851,11 +851,11 @@
             <div class="yh">
               <div class="tc uf wf ag jq">
                 <div class="tc wf ag">
-                  <img src="assets/images/icon-man.svg" alt="User" />
+                  <img src="{{ asset('images-frontend/images/icon-man.svg') }}" alt="User" />
                   <p>Musharof Chy</p>
                 </div>
                 <div class="tc wf ag">
-                  <img src="assets/images/icon-calender.svg" alt="Calender" />
+                  <img src="{{ asset('images-frontend/images/icon-calender.svg') }}" alt="Calender" />
                   <p>25 Dec, 2025</p>
                 </div>
               </div>
@@ -868,7 +868,7 @@
           <!-- Blog Item -->
           <div class="animate_top sg vk rm xm">
             <div class="c rc i z-1 pg">
-              <img class="w-full" src="assets/images/blog-03.png" alt="Blog" />
+              <img class="w-full" src="{{ asset('images-frontend/images/blog-03.png') }}" alt="Blog" />
 
               <div class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10">
                 <a href="./blog-single.html" class="vc ek rg lk gh sl ml il gi hi">Read More</a>
@@ -878,11 +878,11 @@
             <div class="yh">
               <div class="tc uf wf ag jq">
                 <div class="tc wf ag">
-                  <img src="assets/images/icon-man.svg" alt="User" />
+                  <img src="{{ asset('images-frontend/images/icon-man.svg') }}" alt="User" />
                   <p>Musharof Chy</p>
                 </div>
                 <div class="tc wf ag">
-                  <img src="assets/images/icon-calender.svg" alt="Calender" />
+                  <img src="{{ asset('images-frontend/images/icon-calender.svg') }}" alt="Calender" />
                   <p>25 Dec, 2025</p>
                 </div>
               </div>
@@ -899,11 +899,11 @@
     <!-- ===== Contact Start ===== -->
     <section id="support" class="i pg fh rm ji gp uq">
       <!-- Bg Shapes -->
-      <img src="assets/images/shape-06.svg" alt="Shape" class="h aa y" />
-      <img src="assets/images/shape-03.svg" alt="Shape" class="h ca u" />
-      <img src="assets/images/shape-07.svg" alt="Shape" class="h w da ee" />
-      <img src="assets/images/shape-12.svg" alt="Shape" class="h p s" />
-      <img src="assets/images/shape-13.svg" alt="Shape" class="h r q" />
+      <img src="{{ asset('images-frontend/images/shape-06.svg') }}" alt="Shape" class="h aa y" />
+      <img src="{{ asset('images-frontend/images/shape-03.svg') }}" alt="Shape" class="h ca u" />
+      <img src="{{ asset('images-frontend/images/shape-07.svg') }}" alt="Shape" class="h w da ee" />
+      <img src="{{ asset('images-frontend/images/shape-12.svg') }}" alt="Shape" class="h p s" />
+      <img src="{{ asset('images-frontend/images/shape-13.svg') }}" alt="Shape" class="h r q" />
 
       <!-- Section Title Start -->
       <div
@@ -922,8 +922,8 @@
         <div class="tc uf sn tf rn un zf xl:gap-10">
           <div class="animate_top w-full mn/5 to/3 vk sg hh sm yh rq i pg">
             <!-- Bg Shapes -->
-            <img src="assets/images/shape-03.svg" alt="Shape" class="h la x wd" />
-            <img src="assets/images/shape-06.svg" alt="Shape" class="h la ma ne kf" />
+            <img src="{{ asset('images-frontend/images/shape-03.svg') }}" alt="Shape" class="h la x wd" />
+            <img src="{{ asset('images-frontend/images/shape-06.svg') }}" alt="Shape" class="h la ma ne kf" />
 
             <div class="fb">
               <h4 class="wj kk wm cc">Email Address</h4>
@@ -1040,7 +1040,7 @@
     <!-- ===== CTA Start ===== -->
     <section class="i pg gh ji">
       <!-- Bg Shape -->
-      <img class="h p q" src="assets/images/shape-16.svg" alt="Bg Shape" />
+      <img class="h p q" src="{{ asset('images-frontend/images/shape-16.svg') }}" alt="Bg Shape" />
 
       <div class="bb ye i z-10 ki xn dr">
         <div class="tc uf sn tn un gg">
@@ -1072,8 +1072,8 @@
         <div class="tc uf ap gg fp">
           <div class="animate_top zd/2 to/4">
             <a href="index.html">
-              <img src="assets/images/logo-light.svg" alt="Logo" class="om" />
-              <img src="assets/images/logo-dark.svg" alt="Logo" class="xc nm" />
+              <img src="{{ asset('images-frontend/images/logo-light.svg') }}" alt="Logo" class="om" />
+              <img src="{{ asset('images-frontend/images/logo-dark.svg') }}" alt="Logo" class="xc nm" />
             </a>
 
             <p class="lc fb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -1287,7 +1287,7 @@
       };
     };
   </script>
-  <script defer src="assets/bundle.js"></script>
+  <script defer src="{{ asset('asset-frontend/bundle.js') }}"></script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
- <!-- ===== Footer Start ===== -->
+  <!-- ===== Footer Start ===== -->
   <footer>
     <div class="bb ze ki xn 2xl:ud-px-0">
       <!-- Footer Top -->
@@ -6,8 +6,8 @@
         <div class="tc uf ap gg fp">
           <div class="animate_top zd/2 to/4">
             <a href="index.html">
-              <img src="assets/images/logo-light.svg" alt="Logo" class="om" />
-              <img src="assets/images/logo-dark.svg" alt="Logo" class="xc nm" />
+              <img src="{{ asset('images-frontend/images/logo-light.svg') }}" alt="Logo" class="om" />
+              <img src="{{ asset('images-frontend/images/logo-dark.svg') }}" alt="Logo" class="xc nm" />
             </a>
 
             <p class="lc fb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
